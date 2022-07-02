@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A7CCE0A286FFDB000598C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE09286FFDB000598C88 /* AppDelegate.swift */; };
 		6A7CCE0C286FFDB000598C88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE0B286FFDB000598C88 /* SceneDelegate.swift */; };
-		6A7CCE0E286FFDB000598C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE0D286FFDB000598C88 /* ViewController.swift */; };
+		6A7CCE0E286FFDB000598C88 /* CBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE0D286FFDB000598C88 /* CBBaseViewController.swift */; };
 		6A7CCE11286FFDB000598C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7CCE0F286FFDB000598C88 /* Main.storyboard */; };
 		6A7CCE14286FFDB000598C88 /* CubeBuddyProgUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE12286FFDB000598C88 /* CubeBuddyProgUI.xcdatamodeld */; };
 		6A7CCE16286FFDB100598C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7CCE15286FFDB100598C88 /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		6A7CCE06286FFDB000598C88 /* CubeBuddyProgUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeBuddyProgUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7CCE09286FFDB000598C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7CCE0B286FFDB000598C88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6A7CCE0D286FFDB000598C88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A7CCE0D286FFDB000598C88 /* CBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBBaseViewController.swift; sourceTree = "<group>"; };
 		6A7CCE10286FFDB000598C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A7CCE13286FFDB000598C88 /* CubeBuddyProgUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CubeBuddyProgUI.xcdatamodel; sourceTree = "<group>"; };
 		6A7CCE15286FFDB100598C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,8 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				6A7CCE08286FFDB000598C88 /* CubeBuddyProgUI */,
-				6A7CCE22286FFDB100598C88 /* CubeBuddyProgUITests */,
-				6A7CCE2C286FFDB100598C88 /* CubeBuddyProgUIUITests */,
+				6A7CCE3C286FFFB500598C88 /* Tests */,
 				6A7CCE07286FFDB000598C88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,7 +102,7 @@
 			children = (
 				6A7CCE09286FFDB000598C88 /* AppDelegate.swift */,
 				6A7CCE0B286FFDB000598C88 /* SceneDelegate.swift */,
-				6A7CCE0D286FFDB000598C88 /* ViewController.swift */,
+				6A7CCE0D286FFDB000598C88 /* CBBaseViewController.swift */,
 				6A7CCE0F286FFDB000598C88 /* Main.storyboard */,
 				6A7CCE15286FFDB100598C88 /* Assets.xcassets */,
 				6A7CCE17286FFDB100598C88 /* LaunchScreen.storyboard */,
@@ -128,6 +127,15 @@
 				6A7CCE2F286FFDB100598C88 /* CubeBuddyProgUIUITestsLaunchTests.swift */,
 			);
 			path = CubeBuddyProgUIUITests;
+			sourceTree = "<group>";
+		};
+		6A7CCE3C286FFFB500598C88 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A7CCE2C286FFDB100598C88 /* CubeBuddyProgUIUITests */,
+				6A7CCE22286FFDB100598C88 /* CubeBuddyProgUITests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A7CCE0E286FFDB000598C88 /* ViewController.swift in Sources */,
+				6A7CCE0E286FFDB000598C88 /* CBBaseViewController.swift in Sources */,
 				6A7CCE14286FFDB000598C88 /* CubeBuddyProgUI.xcdatamodeld in Sources */,
 				6A7CCE0A286FFDB000598C88 /* AppDelegate.swift in Sources */,
 				6A7CCE0C286FFDB000598C88 /* SceneDelegate.swift in Sources */,
