@@ -10,7 +10,7 @@ import UIKit
 class TimerViewController: CBBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Timer"
+        self.title = "Stopwatch"
         // Do any additional setup after loading the view.
     }
     

@@ -24,6 +24,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewController = MenuViewController()
         let navViewController = UINavigationController(rootViewController: viewController)
         navViewController.navigationBar.standardAppearance = customNavBarAppearance()
+        navViewController.navigationBar.compactAppearance = customNavBarAppearance()
+        navViewController.navigationBar.scrollEdgeAppearance = customNavBarAppearance()
+        navViewController.navigationBar.tintColor = .CBTheme.secondary
+
         window?.rootViewController = navViewController
     }
 
@@ -60,25 +64,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     @available(iOS 13.0, *)
     func customNavBarAppearance() -> UINavigationBarAppearance {
+        
         let customNavBarAppearance = UINavigationBarAppearance()
-        
-        // Apply a red background.
         customNavBarAppearance.configureWithOpaqueBackground()
-        customNavBarAppearance.backgroundColor = .CBTheme.secondary
+        customNavBarAppearance.backgroundColor = .CBTheme.primary
         
-        // Apply white colored normal and large titles.
-        customNavBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        customNavBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        let customFont: UIFont = .CBFonts.primary
+        let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.CBTheme.secondary!, .font: customFont]
+        customNavBarAppearance.titleTextAttributes = attributes
+        customNavBarAppearance.largeTitleTextAttributes = attributes
 
-        // Apply white color to all the nav bar buttons.
         let barButtonItemAppearance = UIBarButtonItemAppearance(style: .plain)
-        barButtonItemAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.white]
-        barButtonItemAppearance.disabled.titleTextAttributes = [.foregroundColor: UIColor.lightText]
-        barButtonItemAppearance.highlighted.titleTextAttributes = [.foregroundColor: UIColor.label]
-        barButtonItemAppearance.focused.titleTextAttributes = [.foregroundColor: UIColor.white]
+        barButtonItemAppearance.normal.titleTextAttributes = attributes
+        barButtonItemAppearance.disabled.titleTextAttributes = attributes
+        barButtonItemAppearance.highlighted.titleTextAttributes = attributes
+        barButtonItemAppearance.focused.titleTextAttributes = attributes
+
         customNavBarAppearance.buttonAppearance = barButtonItemAppearance
         customNavBarAppearance.backButtonAppearance = barButtonItemAppearance
         customNavBarAppearance.doneButtonAppearance = barButtonItemAppearance
+        
+        let backIndicatorImage = UIImage(named: "arrowshape.turn.up.left")
+        customNavBarAppearance.setBackIndicatorImage(backIndicatorImage, transitionMaskImage: backIndicatorImage)
+        customNavBarAppearance.backButtonAppearance.normal.backgroundImage = backIndicatorImage
         
         return customNavBarAppearance
     }

@@ -10,7 +10,8 @@ import UIKit
 
 struct CBConstants {
     enum PickerRows: String, CaseIterable {
-        case timer = "Timer"
+        case timer = "Stopwatch"
         case solves = "Solves"
+        case cubeNoob = "Cube Noob"
     }
 }

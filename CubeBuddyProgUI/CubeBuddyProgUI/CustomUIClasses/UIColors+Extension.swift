@@ -8,7 +8,6 @@
 import UIKit
 
 enum CustomColors: String {
-    
     case primary = "CBPrimary"
     case secondary = "CBSecondary"
 }
