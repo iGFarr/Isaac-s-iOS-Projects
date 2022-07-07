@@ -14,7 +14,7 @@ enum CustomColors: String {
 
 extension UIColor {
     struct CBTheme {
-        static let primary = UIColor(named: "CBPrimary")
-        static let secondary = UIColor(named: "CBSecondary")
+        static let primary = UIColor(named: CustomColors.primary.rawValue)
+        static let secondary = UIColor(named: CustomColors.secondary.rawValue)
     }
 }

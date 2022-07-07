@@ -14,4 +14,8 @@ struct CBConstants {
         case solves = "Solves"
         case cubeNoob = "Cube Noob"
     }
+    
+    struct URLStrings {
+        static let channelPage = "https://www.youtube.com/channel/UCAHXaslH4yfGCCV_tleWioQ"
+    }
 }

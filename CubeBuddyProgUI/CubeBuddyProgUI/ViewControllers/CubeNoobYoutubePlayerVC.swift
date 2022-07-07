@@ -25,6 +25,13 @@ class CubeNoobYoutubePlayerVC: CBBaseViewController {
         constrainWebView()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        if let url = URL(string: "https://www.youtube.com/channel/UCAHXaslH4yfGCCV_tleWioQ") {
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
+    }
+    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
     {
         if keyPath! == "URL" {

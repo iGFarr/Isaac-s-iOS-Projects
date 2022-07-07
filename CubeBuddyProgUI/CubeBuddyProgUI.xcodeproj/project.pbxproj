@@ -17,13 +17,16 @@
 		6A7CCE24286FFDB100598C88 /* CubeBuddyProgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE23286FFDB100598C88 /* CubeBuddyProgUITests.swift */; };
 		6A7CCE2E286FFDB100598C88 /* CubeBuddyProgUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE2D286FFDB100598C88 /* CubeBuddyProgUIUITests.swift */; };
 		6A7CCE30286FFDB100598C88 /* CubeBuddyProgUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE2F286FFDB100598C88 /* CubeBuddyProgUIUITestsLaunchTests.swift */; };
-		6A7CCE412870095800598C88 /* UIColors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE402870095800598C88 /* UIColors+Extension.swift */; };
+		6A7CCE412870095800598C88 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE402870095800598C88 /* UIColor+Extension.swift */; };
 		6A7CCE432870116700598C88 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE422870116700598C88 /* MenuViewController.swift */; };
 		6A7CCE462870129700598C88 /* CBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE452870129700598C88 /* CBConstants.swift */; };
 		6A7CCE4828701E3400598C88 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7CCE4728701E3400598C88 /* TimerViewController.swift */; };
-		6AACD4FC28717EF3006FB54B /* UIFonts+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACD4FB28717EF3006FB54B /* UIFonts+Extension.swift */; };
+		6AACD4FC28717EF3006FB54B /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACD4FB28717EF3006FB54B /* UIFont+Extension.swift */; };
 		6AACD4FE287191FB006FB54B /* SolvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACD4FD287191FB006FB54B /* SolvesViewController.swift */; };
 		6AACD500287196A6006FB54B /* CubeNoobYoutubePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACD4FF287196A5006FB54B /* CubeNoobYoutubePlayerVC.swift */; };
+		6AACD5042872F0AD006FB54B /* CBViewCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACD5032872F0AD006FB54B /* CBViewCreator.swift */; };
+		6AACD5062872F778006FB54B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACD5052872F778006FB54B /* UIView+Extensions.swift */; };
+		6AACD5092876DE07006FB54B /* CBBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AACD5082876DE07006FB54B /* CBBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +61,16 @@
 		6A7CCE29286FFDB100598C88 /* CubeBuddyProgUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeBuddyProgUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7CCE2D286FFDB100598C88 /* CubeBuddyProgUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeBuddyProgUIUITests.swift; sourceTree = "<group>"; };
 		6A7CCE2F286FFDB100598C88 /* CubeBuddyProgUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeBuddyProgUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6A7CCE402870095800598C88 /* UIColors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Extension.swift"; sourceTree = "<group>"; };
+		6A7CCE402870095800598C88 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		6A7CCE422870116700598C88 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		6A7CCE452870129700598C88 /* CBConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBConstants.swift; sourceTree = "<group>"; };
 		6A7CCE4728701E3400598C88 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
-		6AACD4FB28717EF3006FB54B /* UIFonts+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFonts+Extension.swift"; sourceTree = "<group>"; };
+		6AACD4FB28717EF3006FB54B /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		6AACD4FD287191FB006FB54B /* SolvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvesViewController.swift; sourceTree = "<group>"; };
 		6AACD4FF287196A5006FB54B /* CubeNoobYoutubePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeNoobYoutubePlayerVC.swift; sourceTree = "<group>"; };
+		6AACD5032872F0AD006FB54B /* CBViewCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBViewCreator.swift; sourceTree = "<group>"; };
+		6AACD5052872F778006FB54B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		6AACD5082876DE07006FB54B /* CBBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +120,11 @@
 		6A7CCE08286FFDB000598C88 /* CubeBuddyProgUI */ = {
 			isa = PBXGroup;
 			children = (
+				6AACD5072876DDE7006FB54B /* Models */,
+				6AACD5012872F01F006FB54B /* Views */,
 				6A7CCE442870127300598C88 /* CBConstants */,
 				6A7CCE1A286FFDB100598C88 /* Info.plist */,
-				6A7CCE3F2870093900598C88 /* CustomUIClasses */,
+				6A7CCE3F2870093900598C88 /* Extensions */,
 				6A7CCE3D287008F200598C88 /* SupportingFiles */,
 				6A7CCE3E2870090300598C88 /* ViewControllers */,
 			);
@@ -174,13 +182,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		6A7CCE3F2870093900598C88 /* CustomUIClasses */ = {
+		6A7CCE3F2870093900598C88 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6A7CCE402870095800598C88 /* UIColors+Extension.swift */,
-				6AACD4FB28717EF3006FB54B /* UIFonts+Extension.swift */,
+				6A7CCE402870095800598C88 /* UIColor+Extension.swift */,
+				6AACD4FB28717EF3006FB54B /* UIFont+Extension.swift */,
+				6AACD5052872F778006FB54B /* UIView+Extensions.swift */,
 			);
-			path = CustomUIClasses;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		6A7CCE442870127300598C88 /* CBConstants */ = {
@@ -189,6 +198,30 @@
 				6A7CCE452870129700598C88 /* CBConstants.swift */,
 			);
 			path = CBConstants;
+			sourceTree = "<group>";
+		};
+		6AACD5012872F01F006FB54B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6AACD5022872F05F006FB54B /* ViewFactories */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6AACD5022872F05F006FB54B /* ViewFactories */ = {
+			isa = PBXGroup;
+			children = (
+				6AACD5032872F0AD006FB54B /* CBViewCreator.swift */,
+			);
+			path = ViewFactories;
+			sourceTree = "<group>";
+		};
+		6AACD5072876DDE7006FB54B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6AACD5082876DE07006FB54B /* CBBrain.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,11 +358,14 @@
 				6A7CCE0E286FFDB000598C88 /* CBBaseViewController.swift in Sources */,
 				6AACD500287196A6006FB54B /* CubeNoobYoutubePlayerVC.swift in Sources */,
 				6A7CCE432870116700598C88 /* MenuViewController.swift in Sources */,
+				6AACD5092876DE07006FB54B /* CBBrain.swift in Sources */,
 				6A7CCE14286FFDB000598C88 /* CubeBuddyProgUI.xcdatamodeld in Sources */,
-				6AACD4FC28717EF3006FB54B /* UIFonts+Extension.swift in Sources */,
+				6AACD4FC28717EF3006FB54B /* UIFont+Extension.swift in Sources */,
+				6AACD5062872F778006FB54B /* UIView+Extensions.swift in Sources */,
 				6A7CCE462870129700598C88 /* CBConstants.swift in Sources */,
+				6AACD5042872F0AD006FB54B /* CBViewCreator.swift in Sources */,
 				6A7CCE4828701E3400598C88 /* TimerViewController.swift in Sources */,
-				6A7CCE412870095800598C88 /* UIColors+Extension.swift in Sources */,
+				6A7CCE412870095800598C88 /* UIColor+Extension.swift in Sources */,
 				6A7CCE0A286FFDB000598C88 /* AppDelegate.swift in Sources */,
 				6AACD4FE287191FB006FB54B /* SolvesViewController.swift in Sources */,
 				6A7CCE0C286FFDB000598C88 /* SceneDelegate.swift in Sources */,
