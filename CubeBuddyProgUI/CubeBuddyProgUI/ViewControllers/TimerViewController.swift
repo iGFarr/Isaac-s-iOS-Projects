@@ -8,9 +8,13 @@
 import UIKit
 
 class TimerViewController: CBBaseViewController {
+    var viewModel: CBViewCreator.TimerView?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Timer"
+        viewModel = CBViewCreator.TimerView()
+        self.title = "Stopwatch"
+        viewModel?.createTimerView(for: self, usingOptionsBar: false)
+        
         // Do any additional setup after loading the view.
     }
     

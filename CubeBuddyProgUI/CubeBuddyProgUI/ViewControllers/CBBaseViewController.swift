@@ -8,6 +8,8 @@
 import UIKit
 
 class CBBaseViewController: UIViewController {
+    
+    var optionsBar = UIView()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -9,8 +9,15 @@ import UIKit
 
 class MenuViewController: CBBaseViewController {
     let picker = UIPickerView()
-    lazy var timer = TimerViewController()
-    lazy var viewControllerTitles = ["Timer": timer]
+    lazy var stopwatchVC = TimerViewController()
+    lazy var solvesVC = SolvesViewController()
+    lazy var cubeNoobYoutubePlayerVC = CubeNoobYoutubePlayerVC()
+    lazy var viewControllerTitles =
+    [
+        "Stopwatch": stopwatchVC,
+        "Solves": solvesVC,
+        "Cube Noob": cubeNoobYoutubePlayerVC
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +33,8 @@ class MenuViewController: CBBaseViewController {
         picker.delegate = self
         picker.dataSource = self
         picker.translatesAutoresizingMaskIntoConstraints = false
+        picker.backgroundColor = .clear
+        picker.isOpaque = false
         
         view.addSubview(picker)
         NSLayoutConstraint.activate([
@@ -34,11 +43,6 @@ class MenuViewController: CBBaseViewController {
             picker.heightAnchor.constraint(equalToConstant: 250),
             picker.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -32)
         ])
-    }
-    
-    func setupNavBar(){
-        guard let nav = self.navigationController else { return }
-        nav.navigationItem.backBarButtonItem?.tintColor = .CBTheme.primary
     }
 }
 
@@ -58,7 +62,8 @@ extension MenuViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         }
         let title = CBConstants.PickerRows.allCases[row - 1].rawValue
         let color: UIColor = .CBTheme.secondary ?? .systemRed
-        let attributes = [NSAttributedString.Key.foregroundColor: color]
+        let customFont: UIFont = .CBFonts.returnCustomFont(size: 20)
+        let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: color, .font: customFont]
         let attributedTitle = NSAttributedString(string: title, attributes: attributes)
         return attributedTitle
     }
